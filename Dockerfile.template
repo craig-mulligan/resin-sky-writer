@@ -7,8 +7,6 @@ RUN apt-get update && apt-get install python-smbus
 
 # pip install python deps from requirements.txt
 # For caching until requirements.txt changes
-# ADD ./requirements.txt /requirements.txt
-# RUN pip install -r /requirements.txt
 RUN pip install skywriter
 
 # Copy source code into a container directory
