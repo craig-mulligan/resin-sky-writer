@@ -4,9 +4,9 @@ import signal
 
 some_value = 5000
 
-@skywriter.move()
-def move(x, y, z):
-  print( x, y, z )
+# @skywriter.move()
+# def move(x, y, z):
+#   print( x, y, z )
 
 @skywriter.flick()
 def flick(start,finish):
