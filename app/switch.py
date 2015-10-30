@@ -1,26 +1,12 @@
 #!/usr/bin/env python
 import skywriter
 import signal
-import autopy
 
-some_value = 0
-
-width, height = autopy.screen.get_size()
+some_value = 5000
 
 @skywriter.move()
 def move(x, y, z):
-  #print( x, y, z )
-  x = (x) * width
-  y = (y) * height
-
-  x = int(x)
-  y = height - int(y)
-
-  if( y > 799 ):
-   y = 799
-
-  autopy.mouse.move(x, y)
-  #print( int(x), int(y) )
+  print( x, y, z )
 
 @skywriter.flick()
 def flick(start,finish):
