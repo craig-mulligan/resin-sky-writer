@@ -1,0 +1,3 @@
+#put all python dependencies in here.
+skywriter
+autopy
