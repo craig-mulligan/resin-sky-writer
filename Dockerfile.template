@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install python-smbus
 # For caching until requirements.txt changes
 # ADD ./requirements.txt /requirements.txt
 # RUN pip install -r /requirements.txt
-RUN pip install autopy
+RUN pip install skywriter
 
 # Copy source code into a container directory
 COPY /app /usr/src/app
